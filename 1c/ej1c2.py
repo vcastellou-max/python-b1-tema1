@@ -36,8 +36,10 @@ Exemple
 
 
 def invert_list(lst):
-    # Write here your code
-    pass
+    if len(lst) == 0:
+        return []
+    else: 
+        return [lst[-1]] + invert_lst(lst[:-1])
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
